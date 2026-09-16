@@ -1,0 +1,25 @@
+{% if paginator.total_pages > 1 %}
+<div class="pagination-wrapper">
+  <nav class="pagination" role="pagination">
+
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a class="pagination-btn" href="{{ site.baseurl }}/">← Sebelum</a>
+      {% else %}
+        <a class="pagination-btn" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/">← Sebelum</a>
+      {% endif %}
+    {% else %}
+      <span class="pagination-btn disabled">← Sebelum</span>
+    {% endif %}
+
+    <span class="pagination-info">Halaman {{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+      <a class="pagination-btn" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/">Seterus →</a>
+    {% else %}
+      <span class="pagination-btn disabled">Seterus →</span>
+    {% endif %}
+
+  </nav>
+</div>
+{% endif %}

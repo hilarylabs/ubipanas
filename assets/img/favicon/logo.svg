@@ -1,0 +1,31 @@
+<svg viewBox="0 0 430 110" xmlns="http://www.w3.org/2000/svg" width="420" height="110" style="">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1b3e"/>
+      <stop offset="55%" style="stop-color:#0d1b3e"/>
+      <stop offset="100%" style="stop-color:#46CAF5"/>
+    </linearGradient>
+    <clipPath id="pill">
+      <rect x="0" y="0" width="420" height="100" rx="50" ry="50"/>
+    </clipPath>
+  </defs>
+
+  <!-- Pill background -->
+  <rect x="0" y="0" width="420" height="100" rx="50" ry="50" fill="url(#bgGrad)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Fire icon -->
+  <g clip-path="url(#pill)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <!-- Outer flame red -->
+    <path d="M72 82 C55 82 44 70 44 56 C44 44 50 36 56 30 C54 38 57 44 60 46 C58 36 64 24 72 16 C70 28 74 36 79 40 C82 32 84 24 82 16 C90 26 96 38 96 52 C96 66 88 78 80 82 C82 76 80 70 76 66 C75 74 74 80 72 82Z" fill="#CC2200" style="fill:rgb(204, 34, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <!-- Middle flame orange -->
+    <path d="M72 78 C60 78 52 68 52 58 C52 50 56 44 60 40 C59 48 62 54 66 56 C65 48 68 38 72 30 C71 40 74 48 78 52 C80 46 80 40 78 34 C84 42 88 52 88 60 C88 70 81 76 76 78 C77 72 75 68 72 64 C71 70 71 76 72 78Z" fill="#FF6600" style="fill:rgb(255, 102, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <!-- Inner flame yellow -->
+    <path d="M72 74 C65 74 59 67 59 60 C59 54 62 50 65 47 C64 53 67 57 70 59 C69 53 71 46 74 42 C73 50 76 56 79 59 C80 55 79 51 77 47 C82 53 84 60 84 65 C84 71 79 74 76 74 C77 70 75 66 72 63 C71 67 71 72 72 74Z" fill="#FFAA00" style="fill:rgb(255, 170, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <!-- Core white-yellow -->
+    <ellipse cx="72" cy="66" rx="7" ry="9" fill="#FFE566" style="fill:rgb(255, 229, 102);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <ellipse cx="72" cy="69" rx="4" ry="5" fill="#FFFAAA" style="fill:rgb(255, 250, 170);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  </g>
+
+  <!-- UBIPANAS bold text -->
+  <text x="108" y="67" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="3" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial Black, Arial, sans-serif;font-size:42px;font-weight:900;text-anchor:start;dominant-baseline:auto">UBIPANAS</text>
+</svg>

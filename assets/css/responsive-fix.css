@@ -1,0 +1,243 @@
+/* ================================================
+   responsive-fix.css — ubipanas.com
+   Drop this file into assets/css/ and link it in
+   _includes/head.html AFTER main.css
+   ================================================ */
+
+/* Fix 1: Re-enable box-sizing (was commented out in main.css line 767) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ================================================
+   NAVBAR — Hamburger menu for mobile/tablet
+   ================================================ */
+
+/* Hamburger button — hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 200;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #1a1a1a;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+/* Animate hamburger to X when open */
+.nav-toggle.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ================================================
+   LAYOUT — Fix content-area fixed width
+   ================================================ */
+
+/* Tablet: 769px–1099px — content area was stuck at 770px */
+@media (max-width: 1099px) {
+  .site-wrapper {
+    padding: 16px 12px;
+  }
+
+  .content-area {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .sidebar {
+    flex: 0 0 260px;
+    min-width: 0;
+  }
+}
+
+/* Mobile + small tablet: collapse to single column */
+@media (max-width: 768px) {
+  .site-wrapper {
+    flex-direction: column;
+    padding: 12px 10px;
+    gap: 0;
+  }
+
+  .content-area {
+    flex: none;
+    width: 100%;
+  }
+
+  .sidebar {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Fix post card layout on mobile */
+  .post {
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
+    flex-direction: column !important;
+  }
+
+  .post .post-thumbnail {
+    width: 100% !important;
+    min-height: 180px;
+    aspect-ratio: 16/9;
+  }
+
+  .post .post-content {
+    width: 100% !important;
+    padding: 12px;
+  }
+
+  .post .post-content .post-title a {
+    font-size: 1.15rem !important;
+  }
+
+  /* Fix text clipping */
+  .post .post-content p,
+  .post .post-content .post-title {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Nav: show hamburger, hide links by default */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #46CAF5;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    z-index: 150;
+  }
+
+  .navbar-links.is-open {
+    display: flex;
+  }
+
+  .navbar-links li a {
+    padding: 12px 20px;
+    border-radius: 0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .navbar-links li:last-child a {
+    border-bottom: none;
+  }
+
+  /* CTA link gets a highlight row */
+  .navbar-links li a.highlight {
+    background: rgba(255,107,53,0.1);
+  }
+
+  /* Navbar needs relative positioning for dropdown */
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+  .navbar-container {
+    position: relative;
+  }
+}
+
+/* ================================================
+   AD LEADERBOARD — Responsive ad slot
+   ================================================ */
+
+/* Hide the fixed 728x90 on mobile, show a smaller placeholder */
+@media (max-width: 768px) {
+  .ad-leaderboard-inner {
+    height: 60px;
+    font-size: 0.78rem;
+  }
+}
+
+/* ================================================
+   TABLET: 768px–1024px — 2-column post grid fix
+   ================================================ */
+@media (min-width: 769px) and (max-width: 1099px) {
+  /* Posts in a 2-col grid on tablet instead of one huge column */
+  .content-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  /* Pagination takes full width */
+  .pagination-wrapper {
+    width: 100%;
+  }
+
+  .post {
+    flex: 1 1 calc(50% - 6px);
+    max-width: calc(50% - 6px);
+    flex-direction: column !important;
+    margin: 0 !important;
+  }
+
+  .post .post-thumbnail {
+    width: 100% !important;
+    min-height: 160px;
+    aspect-ratio: 16/9;
+  }
+
+  .post .post-content {
+    width: 100% !important;
+    padding: 12px;
+  }
+
+  .post .post-content .post-title a {
+    font-size: 1.05rem !important;
+  }
+}
+
+/* ================================================
+   RELATED POSTS — 2-col on tablet, 1-col on mobile
+   ================================================ */
+@media (max-width: 1099px) {
+  .related-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================================================
+   FOOTER — Already has mobile styles, just add tablet
+   ================================================ */
+@media (min-width: 769px) and (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}

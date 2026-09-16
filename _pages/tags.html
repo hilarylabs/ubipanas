@@ -1,0 +1,27 @@
+---
+layout: main
+title: Semua Tag
+permalink: /tags/
+---
+
+<div class="tags-page">
+  <div class="category-header">
+    <h1>Semua Tag</h1>
+  </div>
+
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+    <div class="tag-section" id="{{ tag[0] | slugify }}">
+      <h3 class="tag-section-title"># {{ tag[0] }} <span class="tag-section-count">{{ tag[1].size }} artikel</span></h3>
+      <ul class="tag-post-list">
+        {% for post in tag[1] %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <small class="text-muted">— {{ post.date | date: '%b %d, %Y' }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+
+</div>

@@ -1,0 +1,72 @@
+<aside class="sidebar">
+{% include ad-sidebar.html %}
+  <!-- Facebook Page Placeholder -->
+  <div class="sidebar-widget">
+    <h3 class="widget-title">Ikuti Kami</h3>
+	<p class="fb-desc">Ikuti kami di Facebook untuk berita dan hiburan terkini!</p>
+    <div class="fb-placeholder">
+   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUbipanasMy&tabs=timeline&width=290&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="290" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+  </div>
+
+  <!-- Terbaru -->
+  <div class="sidebar-widget">
+    <h3 class="widget-title">Terbaru</h3>
+    <ul class="recent-list">
+      {% for post in site.posts limit: 8 %}
+        <li class="recent-item">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="recent-link">
+            {% if post.img %}
+              <div class="recent-thumb">
+                <img src="{{ '/assets/img/' | prepend: site.baseurl | append: post.img }}" alt="{{ post.title }}" loading="lazy">
+              </div>
+            {% elsif post.image %}
+              <div class="recent-thumb">
+                <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" loading="lazy">
+              </div>
+            {% else %}
+              <div class="recent-thumb no-img">📰</div>
+            {% endif %}
+            <div class="recent-info">
+              <span class="recent-title">{{ post.title | truncate: 60 }}</span>
+              <small class="recent-date">{{ post.date | date: '%b %d, %Y' }}</small>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Kategori -->
+  <div class="sidebar-widget">
+    <h3 class="widget-title">Kategori</h3>
+    <ul class="cat-list">
+      {% assign categories = site.categories | sort %}
+      {% for category in categories %}
+        <li>
+          <a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}/">
+            {{ category[0] }}
+            <span class="cat-count">{{ category[1].size }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+<!-- Tags -->
+<div class="sidebar-widget">
+  <h3 class="widget-title">Tags</h3>
+  <div class="tag-cloud">
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+      {% if tag[1].size >= 2 %}
+        <a href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}" class="tag-badge">
+          # {{ tag[0] }}
+          <span class="tag-count">{{ tag[1].size }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+</aside>

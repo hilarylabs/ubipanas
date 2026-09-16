@@ -1,0 +1,16 @@
+---
+title: 'Abang Sado Dakwa Zakar Mengecil, Kerap Pening Kepala Lepas Beli Pil Rambut Online'
+date: '2025-03-18T01:56:45+08:00'
+author: ubipanas
+excerpt: ''
+description: 'Bekas sarjan tentera AS dakwa alat sulitnya mengecil dan alami pelbagai kesan sampingan selepas mengambil pil rambut yang dibeli secara online.'
+layout: post
+permalink: /abang-sado-dakwa-zakar-mengecil-lepas-beli-pil-rambut-online/
+image: /assets/images/2025/03/Mark-Millich.jpg
+categories:
+    - HIBURAN
+---
+
+Selepas bertahun-tahun mengalami masalah rambut yang semakin menipis, Mark Millich beralih ke internet untuk menyelesaikan masalah keguguran rambut. Mark Millich berkata dia membeli pil untuk mencegah masalah keguguran rambut itu secara dalam talian pada Januari 2021. ![](/assets/images/2025/03/Mark-Millich.jpg) <span style="font-size: 1rem;">Mark Millich, 26, bekas sarjan Tentera AS, tidak pernah bercakap dengan doktor atau profesional penjagaan kesihatan, jadi dia langsung tidak sedar tentang kesan sampingan yang bakal dialaminya.</span> Dalam tempoh enam bulan selepas mengambil pil itu, dia mula mengalami pening, keletihan, berpeluh sejuk dan pelat ketika bercakap. Lelaki bertubuh sasa itu mendakwa turut kehilangan jisim otot dan mengalami kulit yang semakin kendur. Bukan itu sahaja, lelaki itu juga mengalami masalah mental. Kerana takut dengan keadaan mentalnya, Millich berhenti mengambil ubat itu pada Julai 2021. Namun, selepas berhenti mengambil pil tersebut, dia mengalami kesan sampingan yang lebih teruk. Mark Millich mulai hilang nafsu seks. Selain dari itu, alat sulitnya juga semakin menjadi kecil dan berubah bentuk. <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7421794500237894"></script>  <ins class="adsbygoogle" data-ad-client="ca-pub-7421794500237894" data-ad-format="auto" data-ad-slot="5704393873" data-full-width-responsive="true" style="display: block;"></ins> <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> Millich mendakwa syarikat pengeluar itu menghasilkan iklan yang tidak tepat, mengelirukan dan gagal memberitahu pelanggan tentang kesan sampingan pil itu. Pil itu disyorkan oleh doktor dalam kes keguguran rambut lelaki untuk membantu meningkatkan pertumbuhan rambut dan melebatkan rambut dari semasa ke semasa. Dalam badan lelaki, enzim yang dipanggil 5α-reductase bertanggungjawab untuk menukar testosteron kepada hormon yang dipanggil DHT (dihydrotestosterone). DHT menyebabkan rambut menjadi lebih pendek dan halus, akhirnya berhenti tumbuh di kawasan yang terjejas. Pil itu berfungsi mengurangkan jumlah hormon DHT yang dihasilkan dalam badan dengan menyekat pengeluaran 5α-reduktase. Walau bagaimana pun, hormon DHT juga penting untuk rangsangan seksual, fungsi ereksi, dan kesihatan tisu alat kelamin. Pengurangan hormon DHT boleh memberi kesan negatif kepada fungsi ini. Menurut data daripada Epic Research, seramai 2.6 juta rakyat Amerika mengambil ubat tersebut setakat 2024, dan jumlah itu semakin meningkat. Sumber: [DailyMail](https://www.dailymail.co.uk/health/article-14495927/Mark-Millich-genitals-effect-finasteride-baldness.html).

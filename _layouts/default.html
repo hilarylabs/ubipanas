@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ms">
+{% include head.html %}
+<body>
+    <!-- Navbar -->
+    {% include menu-header.html %}
+  <div class="wrapper">
+    {{ content }}
+  </div>
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  {% include analytics.html %}
+  <script src="{{ "/assets/js/nav-toggle.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>
